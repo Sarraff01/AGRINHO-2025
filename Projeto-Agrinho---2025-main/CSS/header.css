@@ -1,43 +1,39 @@
-/* Garante que o corpo ocupe toda a altura da viewport e tenha fundo branco padrão */
 body {
     margin: 0;
     padding: 0;
-    background-color: white; /* fundo branco para o restante da página */
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* altura mínima da viewport */
+    background-color: black;
 }
 
-/* Estiliza o container que envolve a imagem e o texto */
-div {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* altura da tela inteira */
-    overflow: hidden; /* evita overflow */
-}
+#principal {
+    height: 770px;
+    background: url("/Projeto-Agrinho---2025-main/exuberantes-terras-agricolas-verdes-sendo-pesquisadas-por-um-drone-para-agricultura-de-precisao.jpg");
+    background-repeat: no-repeat;
+    background-size: 1366px, 765px;
+    }
 
-/* Faz a imagem ocupar toda a área do div */
-div img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* cobre toda a área, cortando o excesso se necessário */
-    display: block;
-}
+#mover {
+    width: 500px;
+    animation: go-back 5s;
+    animation: float 5s ease-in-out infinite;
+    margin-left: 750px ;
 
-/* Centraliza o texto na imagem */
-div h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white; /* cor do texto */
-    text-align: center;
-    background: rgba(255, 255, 255, 0.2); /* fundo semi-transparente para efeito de vidro */
-    padding: 200px 150px; /* espaçamento interno maior para destaque */
-    border-radius: 15px; /* cantos arredondados para efeito mais suave */
-    backdrop-filter: blur(10px); /* efeito de desfoque de fundo */
-    -webkit-backdrop-filter: blur(10px); /* compatibilidade com WebKit */
-    border: 1px solid rgba(255, 255, 255, 0.3); /* borda sutil para definir o retângulo */
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* sombra suave para profundidade */
-    font-size: 2em; /* tamanho do texto */
+}
+@keyframes go-back {
+    0% {
+        transform: translateY(-800px);
+    }
+ }
+ @keyframes float {
+    0%, 100% {
+        transform: translateY(-800px);
+    }
+    50% {
+        transform: translateY(-700px);  
+    }
+}
+.titulo {
+    color: white;
+    font-size: 55px;
+    margin: 0;
+    padding: 150px;
 }
