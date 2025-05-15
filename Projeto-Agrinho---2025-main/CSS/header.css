@@ -8,14 +8,14 @@ body {
     height: 770px;
     background: url("/Projeto-Agrinho---2025-main/exuberantes-terras-agricolas-verdes-sendo-pesquisadas-por-um-drone-para-agricultura-de-precisao.jpg");
     background-repeat: no-repeat;
-    background-size: 1366px, 765px;
+    background-size: 100%;
     }
 
 #mover {
     width: 500px;
     animation: go-back 5s;
     animation: float 5s ease-in-out infinite;
-    margin-left: 750px ;
+    margin-left: 60%;
 
 }
 @keyframes go-back {
@@ -36,4 +36,15 @@ body {
     font-size: 55px;
     margin: 0;
     padding: 150px;
+    font-family:  "Outfit";
+
+}
+.italic {
+    font-weight: 300;
+}
+.subtitulo {
+    color: rgb(128, 128, 128);
+    font-family: "Outfit";
+    margin-left: 150px;
+    margin-top: -100px;
 }
