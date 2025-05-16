@@ -25,10 +25,10 @@ body {
  }
  @keyframes float {
     0%, 100% {
-        transform: translateY(-800px);
+        transform: translateY(-2200px);
     }
     50% {
-        transform: translateY(-700px);  
+        transform: translateY(-2100px);  
     }
 }
 .titulo {
@@ -48,3 +48,39 @@ body {
     margin-left: 150px;
     margin-top: -100px;
 }
+#second {
+    background-color: white;
+    width: auto;
+    height: 802px;
+    padding: 205px;
+    padding-left: 350px;
+}
+.titulo-second{
+    color: rgb(0, 0, 0);
+    font-family: "Outfit";
+    font-size: 55px;
+}
+.subtitulo-second {
+    color: rgb(128, 128, 128);
+    font-family: "Outfit";
+    margin-top: 20px;
+}
+/* Estilizando o wrapper para layout em linha */
+.content-wrapper {
+    display: flex;
+    align-items: flex-start; /* Alinhar no topo */
+    justify-content: space-between; /* Espaço entre os elementos */
+    gap: 20px; /* Espaçamento entre o texto e a imagem */
+  }
+  
+  /* Estilizando a imagem ao lado */
+  .side-image {
+    width: 500px; /* ajuste o tamanho conforme necessário */
+    height: auto;
+    margin-top: -50px;
+    /* Opcional: adicionar margin ou outros estilos */
+  }
+  .link {
+    margin-top: 800px;
+    margin-left: -1100px;
+  }
